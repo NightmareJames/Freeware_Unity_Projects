@@ -21,5 +21,8 @@ public class PlayerControls : MonoBehaviour {
         {
             rigidbody2D.velocity = new Vector2(0, 0);
         }
-	}
+
+        float a_speed = rigidbody2D.velocity.y;
+        rigidbody2D.velocity = new Vector2(0, a_speed);
+    }
 }
